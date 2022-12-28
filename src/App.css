@@ -1,38 +1,91 @@
-.App {
+:root {
+  --page-bg: #eee7be;
+  --primary: #173f5f;
+  --button-bg: #20639b;
+  --error: #ed553b;
+  --secondary: #3caea3;
+  --dark-text: #444;
+  --light-text: #fff;
+  
+}
+
+body{
+  background : var(--page-bg);
+  font-size: 16px;
+  margin: 0;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+header {
+  margin: 0;
+  padding: 1rem;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--primary);
+}
+
+header ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+header li {
+  display: inline-block;
+  margin: 0 1rem 0 0;
+  padding: 0;
+}
+
+header a.btn {
+  width: 9rem;
+}
+
+.btn{
+  background-color: var(--button-bg);
+  color: var(--light-text);
+  border: none;
+  border-radius: 1.5rem;
+  margin-left: 0.5rem;
+  padding: 0.5rem 1.5rem;
+  display: inline-flex;
+  transition: all 0.4s ease;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.btn:first-child{
+  margin-left: 0;
+}
+
+a.btn{
+  text-decoration: none;
+}
+
+.btn-delete {
+  background: var(--error);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.btn >svg:first-child{
+  margin-left: 0.4rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn >svg:last-child{
+  margin-left: 0.4rem;
+}
+
+.btn:hover{
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.btn-header {
+  background: var(--primary);
+  border: 1px solid var(--button-bg);
+}
+
+.btn-header:hover {
+  border-color: var(--light-text);
 }
