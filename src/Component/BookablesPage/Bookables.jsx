@@ -1,9 +1,10 @@
 import React from "react";
+import BookablesList from "./BookablesList";
 
 const Bookables = () => {
-    return (<div className="container">
-        This is the Bookables page
-    </div>)
+    return (<main className="bookables-page">
+        <BookablesList/>
+    </main>)
 }
 
 export default Bookables
