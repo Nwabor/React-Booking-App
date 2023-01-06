@@ -5,7 +5,7 @@ import Nextbutton from "./NextButton";
 const Bookables = () => {
   return (
     <main className="bookables-page">
-      <BookablesList />
+      {/* <BookablesList /> */}
       <Nextbutton />
     </main>
   );
