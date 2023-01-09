@@ -6,11 +6,10 @@
   --secondary: #3caea3;
   --dark-text: #444;
   --light-text: #fff;
-  
 }
 
-body{
-  background : var(--page-bg);
+body {
+  background: var(--page-bg);
   font-size: 16px;
   margin: 0;
   text-align: center;
@@ -41,7 +40,7 @@ header a.btn {
   width: 9rem;
 }
 
-.btn{
+.btn {
   background-color: var(--button-bg);
   color: var(--light-text);
   border: none;
@@ -56,11 +55,11 @@ header a.btn {
   box-sizing: border-box;
 }
 
-.btn:first-child{
+.btn:first-child {
   margin-left: 0;
 }
 
-a.btn{
+a.btn {
   text-decoration: none;
 }
 
@@ -69,16 +68,16 @@ a.btn{
   color: white;
 }
 
-.btn >svg:first-child{
+.btn > svg:first-child {
   margin-left: 0.4rem;
 }
 
-.btn >svg:last-child{
+.btn > svg:last-child {
   margin-left: 0.4rem;
 }
 
-.btn:hover{
-  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+.btn:hover {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .btn-header {
@@ -101,7 +100,6 @@ main {
   margin: 40px 20px;
 }
 
- 
 .items-list-nav {
   margin: 1rem auto;
   padding: 1rem;
@@ -136,4 +134,51 @@ main {
 .items-list-nav .selected .btn {
   background: var(--primary);
   color: var(--light-text);
-} 
+}
+
+.item {
+  background: var(--primary);
+  color: var(--light-text);
+  padding: 2rem;
+  text-align: left;
+}
+
+.item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--primary);
+  border-bottom: 8px solid white;
+  margin: -2rem -2rem 1rem;
+  padding: 0 1rem;
+}
+
+.item-header .controls {
+  font-weight: normal;
+}
+
+.item h3 {
+  border-bottom: 1px solid white;
+  margin: 1em 0 0.5em;
+  padding-bottom: 3px;
+}
+
+.bookable-availability {
+  display: flex;
+  padding: 0 1em;
+}
+
+.bookable-availability ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 40%;
+}
+
+.bookable-availability li {
+  margin: 0.4em 0;
+}
+
+.item-details .bookable-availability ul {
+  list-style: square;
+}
