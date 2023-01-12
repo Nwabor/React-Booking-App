@@ -2,9 +2,11 @@ import React from "react";
 import UserList from "./UserList";
 
 const User = () => {
-    return (<div className="container">
-        <UserList/>
-    </div>)
-}
+  return (
+    <main className="users-page">
+      <UserList />
+    </main>
+  );
+};
 
-export default User
+export default User;

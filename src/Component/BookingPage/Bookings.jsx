@@ -1,9 +1,7 @@
 import React from "react";
 
 const Bookings = () => {
-    return (<div className="container">
-        This is the Bookings page
-    </div>)
-}
+  return <main className="bookings-page">This is the Bookings page</main>;
+};
 
-export default Bookings
+export default Bookings;

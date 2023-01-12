@@ -8,6 +8,7 @@ const Nextbutton = () => {
   const bookablesInGroup = bookables.filter((item) => item.group === group);
   const [bookablesIndex, setBookablesIndex] = useState(0);
   const groups = [...new Set(bookables.map((b) => b.group))];
+  console.log(groups);
 
   const bookable = bookablesInGroup[bookablesIndex];
   const [hasDetails, setHasDetails] = useState(false);

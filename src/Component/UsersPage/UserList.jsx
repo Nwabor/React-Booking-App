@@ -3,6 +3,7 @@ import data from "../../static.json";
 
 const UserList = () => {
   const { users } = data;
+  console.log(users);
   const [usersIndex, setUsersIndex] = useState(0);
   const user = users[usersIndex];
 
@@ -12,7 +13,10 @@ const UserList = () => {
         <div className="item">
           <h2>{user.name}</h2>
         </div>
-        <p>{user.notes}</p>
+        <div className="user-title">
+          <h3>{user.title}</h3>
+          <p>{user.notes}</p>
+        </div>
         <ul className="users items-list-nav">
           {users.map((item, i) => (
             <li
