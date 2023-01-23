@@ -1,12 +1,10 @@
 import React from "react";
-import BookablesList from "./BookablesList";
-import Nextbutton from "./NextButton";
+import ReducerPage from "./ReducerPage";
 
 const Bookables = () => {
   return (
     <main className="bookables-page">
-      {/* <BookablesList /> */}
-      <Nextbutton />
+      <ReducerPage />
     </main>
   );
 };

@@ -3,7 +3,6 @@ import data from "../../static.json";
 
 const UserList = () => {
   const { users } = data;
-  console.log(users);
   const [usersIndex, setUsersIndex] = useState(0);
   const user = users[usersIndex];
 

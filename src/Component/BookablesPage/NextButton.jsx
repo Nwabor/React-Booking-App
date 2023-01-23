@@ -8,12 +8,15 @@ const Nextbutton = () => {
   const bookablesInGroup = bookables.filter((item) => item.group === group);
   const [bookablesIndex, setBookablesIndex] = useState(0);
   const groups = [...new Set(bookables.map((b) => b.group))];
-  console.log(groups);
 
   const bookable = bookablesInGroup[bookablesIndex];
   const [hasDetails, setHasDetails] = useState(false);
 
-  // this is what will happen when the next button is clicked
+  function changeGroup(event) {
+    setGroup(event.target.value);
+    setBookablesIndex(0);
+  }
+
   function nextBookable() {
     setBookablesIndex((i) => (i + 1) % bookablesInGroup.length);
   }
@@ -56,7 +59,7 @@ const Nextbutton = () => {
         </div>
       )}
       <div>
-        <select value={group} onChange={(e) => setGroup(e.target.value)}>
+        <select value={group} onChange={changeGroup}>
           {groups.map((g) => (
             <option key={g} value={g}>
               {g}
