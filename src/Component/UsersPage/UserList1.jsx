@@ -2,7 +2,6 @@ import { useState } from "react";
 import data from "../../static.json";
 
 const { users } = data;
-console.log(users);
 
 export default function UserList_1() {
   const [userIndex, SetUserIndex] = useState(0);

@@ -4,7 +4,7 @@ import Bookings from "./BookingPage/Bookings";
 import Bookables from "./BookablesPage/Bookables";
 import "../App.css";
 import { FaCalendarAlt, FaDoorOpen, FaUsers } from "react-icons/fa";
-import UserPicker from "./UsersPage/UserPicker";
+import UserPicker1 from "./UsersPage/UserPicker1";
 
 const App = () => {
   return (
@@ -33,7 +33,7 @@ const App = () => {
               </li>
             </ul>
           </nav>
-          <UserPicker />
+          <UserPicker1 />
         </header>
       </div>
       <Routes>
