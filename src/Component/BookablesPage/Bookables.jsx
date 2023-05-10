@@ -2,7 +2,6 @@ import { useState } from "react";
 import data from "../../static.json";
 
 const { bookables } = data;
-console.log(bookables);
 
 const Bookables = () => {
   const group = "Rooms";

@@ -1,10 +1,10 @@
 import React from "react";
-import UserList from "./UserList";
+import UserList1 from "./UserList1";
 
 const User = () => {
   return (
     <main className="users-page">
-      <UserList />
+      <UserList1 />
     </main>
   );
 };

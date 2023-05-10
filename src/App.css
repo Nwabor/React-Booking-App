@@ -105,7 +105,7 @@ main {
 }
 
 .bookables-page,
-.users-page {
+.users {
   max-width: 70em;
   grid-template-columns: 1fr 3fr;
   grid-column-gap: 40px;
