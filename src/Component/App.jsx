@@ -1,10 +1,10 @@
-import React from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import User from "./UsersPage/User";
 import Bookings from "./BookingPage/Bookings";
 import Bookables from "./BookablesPage/Bookables";
+import "../App.css";
 import { FaCalendarAlt, FaDoorOpen, FaUsers } from "react-icons/fa";
-import UserPicker from "./UserPicker";
+import UserPicker from "./UsersPage/UserPicker";
 
 const App = () => {
   return (

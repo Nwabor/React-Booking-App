@@ -1,5 +1,5 @@
 import React from "react";
-import data from "../static.json";
+import data from "../../static.json";
 
 const UserPicker = () => {
   const { users } = data;
