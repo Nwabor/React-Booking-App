@@ -1,3 +1,4 @@
+import { useState } from "react";
 import data from "../../static.json";
 
 const { bookables } = data;
@@ -6,19 +7,13 @@ console.log(bookables);
 const Bookables = () => {
   const group = "Rooms";
   const bookableInGroup = bookables.filter((b) => b.group === group);
-  console.log(bookableInGroup);
-  let bookableIndex = 1;
-
-  function changeBookable(selectedIndex) {
-    bookableIndex = selectedIndex;
-    console.log(selectedIndex);
-  }
+  const [bookableIndex, SetBookableIndex] = useState(1);
 
   return (
     <ul className="bookables items-list-nav">
       {bookableInGroup.map((b, i) => (
         <li key={b.id} className={i === bookableIndex ? "selected" : null}>
-          <button onClick={() => changeBookable(i)} className="btn">
+          <button onClick={() => SetBookableIndex(i)} className="btn">
             {b.title}
           </button>
         </li>
