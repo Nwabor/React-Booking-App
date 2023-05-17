@@ -3,7 +3,7 @@ import UserList1 from "./UserList1";
 
 const User = () => {
   return (
-    <main className="users-page">
+    <main>
       <UserList1 />
     </main>
   );
